@@ -125,6 +125,8 @@ export default function Courses() {
             Nanotechnology: "bg-violet-500/20 text-violet-700 dark:text-violet-300",
             Humanities: "bg-rose-500/20 text-rose-700 dark:text-rose-300",
             Management: "bg-amber-500/20 text-amber-700 dark:text-amber-300",
+            Economics: "bg-teal-500/20 text-teal-700 dark:text-teal-300",
+            Philosophy: "bg-slate-500/20 text-slate-700 dark:text-slate-300",
             Exchange: "bg-gray-500/20 text-gray-700 dark:text-gray-300",
         };
         return colors[category] || "bg-gray-500/20 text-gray-700";
