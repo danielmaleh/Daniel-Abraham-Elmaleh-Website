@@ -23,7 +23,7 @@ export default function Project() {
         <div className="w-full space-y-6">
             <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
                 <FaWrench />
-                Some Cool Projects
+                Projects
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-6">
