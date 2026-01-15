@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 export type ProjectResource = {
     type: "report" | "demo" | "slides" | "code";
     label: string;
@@ -113,11 +115,13 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/ColorToThickness",
                 description: "Python analytical software for thickness mapping.",
             },
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/anti-stokes-spectroscopy",
                 description: "Python Raman analysis scripts.",
             },
         ],
@@ -141,6 +145,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/sers-creatinine-deep-learning",
                 description: "Deep learning models for SERS spectral analysis and preprocessing scripts.",
             },
         ],
@@ -165,6 +170,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/deep-learning-solar-irradiance-prediction",
                 description: "Deep learning model implementations and training scripts (notebook).",
             },
         ],
@@ -191,6 +197,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/thymio-autonomous-navigation",
                 description: "The complete code for the project.",
             },
         ],
@@ -212,6 +219,12 @@ export const ProjectsData: Project[] = [
         ],
         tags: ["Robotics", "Electronics", "Mechanical Design", "Control"],
         resources: [
+            {
+                type: "code",
+                label: "Source Code",
+                url : "https://github.com/danielmaleh/solar-panel-robot-cleaner",
+                description: "Embedded software for robot control and navigation for autonomous solar panel cleaning.",
+            },
         ],
         featured: true,
     },
@@ -236,6 +249,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/cobar-fly-obstacle-avoidance",
                 description: "CPG locomotion controller implementations and simulation scripts.",
             },
         ],
@@ -277,6 +291,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/opengl-planetary-system",
                 description: "OpenGL/CGP implementation.",
             },
         ],
@@ -300,6 +315,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/planet-donut-simulation",
                 description: "C++ game implementation.",
             },
         ],
@@ -359,6 +375,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/nanowire-fet-analysis",
                 description: "C++ game implementation.",
             },
         ],
@@ -382,6 +399,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/raspberry-pi-slam-robot",
                 description: "Robot control and SLAM implementation.",
             },
         ],
@@ -424,6 +442,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/fpga-digital-clock",
                 description: "FPGA implementation and HDL code.",
             },
         ],
@@ -447,6 +466,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/avr-room-monitor",
                 description: "AVR assembly implementation.",
             },
         ],
@@ -470,6 +490,7 @@ export const ProjectsData: Project[] = [
             {
                 type: "code",
                 label: "Source Code",
+                url : "https://github.com/danielmaleh/balanced-isospring-oscillator",
                 description: "Matlab kinematic analysis and simulation.",
             },
         ],
