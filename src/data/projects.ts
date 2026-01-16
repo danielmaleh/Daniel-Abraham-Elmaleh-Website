@@ -353,7 +353,7 @@ export const ProjectsData: Project[] = [
     },
     {
         slug: "optical-path-motor-control",
-        title: "Optical Path & Motor Control System",
+        title: "Optical Path simulation & Motor Control System",
         course: "Lino Biotech (Miltenyi Biotec) - Internship",
         timeline: "2024",
         summary: "Developed motor control pipeline for biosensor reader optical alignment with gradient ascent optimization algorithms.",
