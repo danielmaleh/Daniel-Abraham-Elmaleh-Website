@@ -1,5 +1,3 @@
-import { url } from "inspector";
-
 export type ProjectResource = {
     type: "report" | "demo" | "slides" | "code";
     label: string;
