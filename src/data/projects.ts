@@ -70,11 +70,6 @@ export const ProjectsData: Project[] = [
         ],
         tags: ["Bio-MedTech", "Electronics", "Nanotechnology"],
         resources: [
-            {
-                type: "report",
-                label: "Design Report",
-                description: "Aptasensor design and characterization.",
-            },
         ],
         featured: true,
     },
@@ -93,6 +88,7 @@ export const ProjectsData: Project[] = [
             "Received feedback on body language and vocal techniques.",
         ],
         tags: [],
+        pdfLabel: "Presentation Slides",
     },
     {
         slug: "anti-stokes-gold-flakes",
@@ -164,6 +160,7 @@ export const ProjectsData: Project[] = [
             "Explored different neural network architectures.",
         ],
         tags: ["Deep Learning", "Photonics", "Computer Vision"],
+        pdfLabel: "Final Presentation",
         resources: [
             {
                 type: "code",
@@ -389,6 +386,7 @@ export const ProjectsData: Project[] = [
             "Integrated with Datadog for log monitoring.",
         ],
         tags: ["Bio-MedTech", "Signal Processing", "Deep Learning"],
+        pdfLabel: "Test experiment procedure",
         resources: [],
     },
     {
