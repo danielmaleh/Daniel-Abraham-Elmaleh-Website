@@ -122,6 +122,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
   }
 }
