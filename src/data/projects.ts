@@ -32,6 +32,7 @@ export type Project = {
     featured?: boolean;
     pdfLabel?: string;
     pdfDescription?: string;
+    youtubeId?: string;
 };
 
 export const ProjectsData: Project[] = [
@@ -78,6 +79,7 @@ export const ProjectsData: Project[] = [
         title: "Presentation Pitch - Good intentions aren't enough",
         course: "MGT-469 Intercultural Presentation Skills",
         timeline: "2024",
+        youtubeId: "xdQWp6RKh_Q",
         summary: "Developed and delivered a pitch presentation focusing on intercultural communication and presentation techniques.",
         description:
             "Individual project as part of the Intercultural Presentation Skills course. Developed a pitch presentation incorporating intercultural communication principles, body language awareness, and effective storytelling techniques for diverse audiences.",
@@ -125,6 +127,7 @@ export const ProjectsData: Project[] = [
         title: "SERS & Deep Learning for Creatinine Detection",
         course: "BIOS Lab - Prof. Hatice Altug",
         timeline: "2025",
+        youtubeId: "VFd30WMRA9g",
         summary: "Developed Surface Enhanced Raman Spectroscopy with transformer and CNN models for continuous creatinine monitoring in human serum.",
         description:
             "Research project at EPFL's Bio-nano-photonic System Lab (BIOS) developing SERS-based biosensors for medical diagnostics. Led the photonics team at the SensUs competition. Combined advanced optical sensing with deep learning (transformers and convolutional neural networks) for accurate biomarker detection.",
@@ -203,6 +206,7 @@ export const ProjectsData: Project[] = [
         title: "Autonomous Solar Panel Cleaner Robot",
         course: "MICRO-406 Products Design & Systems Engineering",
         timeline: "2023",
+        youtubeId: "aKA6iNQlM6o",
         summary: "Full prototype design of an autonomous robot for cleaning solar panels, with complete system engineering and management.",
         description:
             "Group project (6 members) developing a complete autonomous solar panel cleaning robot. Responsible for electronics, software development, and implementation. Applied full product design lifecycle including requirements analysis, system architecture, prototyping, and testing.",
@@ -419,6 +423,7 @@ export const ProjectsData: Project[] = [
         title: "10-Minute Documentary Film",
         course: "HUM Arts Course",
         timeline: "2024",
+        youtubeId: "IQuhyqVqofI",
         summary: "Wrote, filmed, and edited a 10-minute documentary exploring personal and social themes.",
         description:
             "Creative project involving complete documentary production: scriptwriting, filming, and post-production editing. Worked in a team of two to create a compelling 10-minute documentary film titled 'OUI PAPA'.",
@@ -461,6 +466,7 @@ export const ProjectsData: Project[] = [
         title: "Microcontroller Room Occupation Monitor",
         course: "MICRO-210 Microcontrollers",
         timeline: "2022",
+        youtubeId: "JKvU27L-3Us",
         summary: "Built an Atmel AVR microcontroller-based room monitor with entrance control.",
         description:
             "Embedded systems project creating a room occupation monitoring system using Atmel AVR microcontroller. Programmed in assembly language, controlling servo motor, distance sensors, buzzer, and LED panel screen for entrance monitoring and display.",

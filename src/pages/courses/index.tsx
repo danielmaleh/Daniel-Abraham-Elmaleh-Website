@@ -127,6 +127,8 @@ export default function Courses() {
             Management: "bg-amber-500/20 text-amber-700 dark:text-amber-300",
             Economics: "bg-teal-500/20 text-teal-700 dark:text-teal-300",
             Philosophy: "bg-slate-500/20 text-slate-700 dark:text-slate-300",
+            Finance: "bg-lime-500/20 text-lime-700 dark:text-lime-300",
+            "Computer Engineering": "bg-sky-500/20 text-sky-700 dark:text-sky-300",
             Exchange: "bg-gray-500/20 text-gray-700 dark:text-gray-300",
         };
         return colors[category] || "bg-gray-500/20 text-gray-700";

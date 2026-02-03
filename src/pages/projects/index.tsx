@@ -17,7 +17,7 @@ import type {
     KeyboardEvent,
 } from "react";
 import { useNavigate, useParams } from "react-router";
-import { FaArrowLeft, FaFileLines, FaLink, FaVideo, FaWrench } from "react-icons/fa6";
+import { FaArrowLeft, FaFileLines, FaLink, FaVideo, FaWrench, FaYoutube } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -370,6 +370,24 @@ function ProjectDetailPage({ project, onBack }: { project: Project; onBack: () =
                         {markdownContent ?? fallbackMarkdown}
                     </ReactMarkdown>
                 </div>
+
+                {project.youtubeId && (
+                    <div className="space-y-4">
+                        <div className="flex items-center gap-2 text-xl font-semibold">
+                            <FaYoutube className="w-5 h-5 text-red-600" />
+                            Project Video
+                        </div>
+                        <div className="relative w-full aspect-video rounded-xl border overflow-hidden bg-black">
+                            <iframe
+                                src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                                title={`${project.title} - Video`}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                                className="absolute inset-0 w-full h-full"
+                            />
+                        </div>
+                    </div>
+                )}
 
                 {assets.videos.length > 0 && (
                     <div className="space-y-4">
