@@ -355,7 +355,7 @@ export const ProjectsData: Project[] = [
         slug: "optical-path-motor-control",
         title: "Optical Path simulation & Motor Control System",
         course: "Lino Biotech (Miltenyi Biotec) - Internship",
-        timeline: "2024",
+        timeline: "2025",
         summary: "Developed motor control pipeline for biosensor reader optical alignment with gradient ascent optimization algorithms.",
         description:
             "Internship project at Lino Biotech developing the complete motor control pipeline for the 'Sirius' biosensor reader. Designed layered architecture from firmware to React frontend, implementing gradient ascent optimization for laser coupling, surface focusing, and Fourier aperture alignment. System controls 5 stepper motors via CAN bus for precise optical path alignment.",
@@ -371,9 +371,9 @@ export const ProjectsData: Project[] = [
     },
     {
         slug: "biosensor-quality-analysis",
-        title: "Automated Biosensor Quality Analysis Dashboard",
+        title: "Automated Biosensor Quality Analysis Dashboard with various metrics and Grading",
         course: "Lino Biotech (Miltenyi Biotec) - Internship",
-        timeline: "2024",
+        timeline: "2025",
         summary: "Built Streamlit dashboard for automated quality analysis of biosensor data with comprehensive scoring and anomaly detection.",
         description:
             "Internship project at Lino Biotech creating 'The Daniel Test' - an interactive Streamlit dashboard for automated quality analysis of mologram sensor data. Implemented comprehensive metrics including noise analysis, SNR evaluation, spike detection, and step event identification. System provides per-sensor grading and global chip pass/fail verdicts with configurable thresholds.",

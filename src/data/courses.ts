@@ -30,6 +30,8 @@ export type CourseCategory =
   | "Management"
   | "Economics"
   | "Philosophy"
+  | "Finance"
+  | "Computer Engineering"
   | "Exchange";
 
 export const CoursesData: Course[] = [
@@ -99,7 +101,7 @@ export const CoursesData: Course[] = [
     credits: 4,
     grade: 4.75,
     language: "EN",
-    category: "Management",
+    category: "Finance",
     level: "Master",
     professor: "Prof. Rüdiger Fahlenbrach",
   },
@@ -151,7 +153,7 @@ export const CoursesData: Course[] = [
     credits: 4,
     grade: 4.0,
     language: "EN",
-    category: "Photonics & Optics",
+    category: "Physics",
     level: "Master",
     professor: "Prof. Nicolas Grandjean",
   },
@@ -194,7 +196,7 @@ export const CoursesData: Course[] = [
     credits: 3,
     grade: 5.25,
     language: "EN",
-    category: "Bio & MedTech",
+    category: "Photonics & Optics",
     level: "Master",
     professor: "Prof. Wagnières Georges",
   },
@@ -405,7 +407,7 @@ export const CoursesData: Course[] = [
     credits: 3,
     grade: 4.75,
     language: "FR",
-    category: "Electronics",
+    category: "Computer Engineering",
     level: "Bachelor",
     professor: "Prof. Alexandre Schmid",
     description: "Programming microcontrollers using assembly language.",
@@ -497,7 +499,7 @@ export const CoursesData: Course[] = [
     credits: 3,
     grade: 5.25,
     language: "FR",
-    category: "Electronics",
+    category: "Computer Engineering",
     level: "Bachelor",
     professor: "Prof. Alexandre Schmid",
   },
@@ -574,7 +576,7 @@ export const CoursesData: Course[] = [
     credits: 3,
     grade: 4.5,
     language: "EN",
-    category: "Computer Science",
+    category: "Mathematics",
     level: "Bachelor",
     professor: "Prof. Vivek Subramanian",
 
@@ -873,7 +875,7 @@ export const CoursesData: Course[] = [
   // ===================== PREP YEAR (CMS) =====================
   {
     code: "PREPA",
-    name: "Computer-aided Engineering (CMS)",
+    name: "Java Programing (CMS)",
     institution: "EPFL",
     year: "2020",
     semester: "Summer",
