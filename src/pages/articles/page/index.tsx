@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation, Link } from "react-router";
+import { useParams, Link } from "react-router";
 import fm from "front-matter";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
-import Giscus from "@giscus/react";
+
 import { FaArrowLeft } from "react-icons/fa6";
 
 import { Separator } from "@/components/ui/separator";
-import { useTheme } from "@/components/theme-provider";
+
 import { usePageTitle } from "@/hooks/use-pagetitle";
 import { Button } from "@/components/ui/button";
 
@@ -88,7 +88,6 @@ export default function Article() {
                 </ReactMarkdown>
 
                 {!loading && <Separator className="my-6 sm:my-12" />}
-                {!loading && <ArticleComments />}
             </div>
 
             <div className="relative w-full max-w-6xl mt-4">
@@ -109,38 +108,3 @@ export default function Article() {
     );
 }
 
-function ArticleComments() {
-    const location = useLocation();
-
-    const { theme } = useTheme();
-    const [giscusTheme, setGiscusTheme] = useState<"light" | "dark_dimmed">("light");
-
-    useEffect(() => {
-        if (theme === "dark") {
-            setGiscusTheme("dark_dimmed");
-        } else if (theme === "light") {
-            setGiscusTheme("light");
-        } else {
-            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            setGiscusTheme(prefersDark ? "dark_dimmed" : "light");
-        }
-    }, [theme]);
-
-    return (
-        <Giscus
-            repo="pm25/simpleplain"
-            repoId="R_kgDONgMOyA"
-            category="General"
-            categoryId="DIC_kwDONgMOyM4Cq4Ga"
-            mapping="specific"
-            term={location.pathname}
-            strict="0"
-            reactionsEnabled="1"
-            emitMetadata="0"
-            inputPosition="top"
-            theme={giscusTheme}
-            lang="en"
-            loading="lazy"
-        />
-    );
-}
