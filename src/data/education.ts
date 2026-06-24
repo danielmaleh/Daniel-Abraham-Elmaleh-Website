@@ -4,7 +4,7 @@ import mitLogo from "./images/mit_logo.svg";
 
 export const EduData = [
   {
-    degree: "Visiting Researcher - Master's Thesis",
+    degree: "Visiting Researcher | Master's Thesis",
     school: "Massachusetts Institute of Technology (MIT) - Media Lab",
     years: "Jun 2026 - Nov 2026",
     logo: mitLogo,
