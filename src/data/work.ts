@@ -7,7 +7,7 @@ export const WorkData = [
   // === PRESENT POSITIONS (sorted by start date, most recent first) ===
   {
     title: "Graduate Researcher",
-    company: "MIT Media Lab | Fluid Interfaces Group",
+    company: "MIT Media Lab - Fluid Interfaces Group",
     location: "Cambridge, MA, USA",
     years: "Jun 2026 - Present",
     logo: mitLogo,
