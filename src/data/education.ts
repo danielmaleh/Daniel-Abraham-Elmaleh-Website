@@ -4,8 +4,8 @@ import mitLogo from "./images/mit_logo.svg";
 
 export const EduData = [
   {
-    degree: "Visiting Student — Master's Thesis Research",
-    school: "Massachusetts Institute of Technology (MIT) — Media Lab, Program in Media Arts and Sciences",
+    degree: "Visiting Researcher - Master's Thesis",
+    school: "Massachusetts Institute of Technology (MIT) - Media Lab",
     years: "Jun 2026 - Nov 2026",
     logo: mitLogo,
     description: "Six-month visiting research stay in the Fluid Interfaces group (Prof. Pattie Maes), conducting my EPFL master's thesis: design, fabrication, and human-subject evaluation of a wearable NIR brain-stimulation device.",
