@@ -2,6 +2,7 @@ import epflLogo from "./images/epfl_logo.svg";
 import linoLogo from "./images/lino_logo.avif";
 import biosenseLogo from "./images/biosense_logo.png";
 import mitLogo from "./images/mit_logo.svg";
+import meidaLab from "./images/mb_mitmedialab_03.avif";
 
 export const WorkData = [
   // === PRESENT POSITIONS (sorted by start date, most recent first) ===
@@ -10,7 +11,7 @@ export const WorkData = [
     company: "MIT Media Lab - Fluid Interfaces Group",
     location: "Cambridge, MA, USA",
     years: "Jun 2026 - Present",
-    logo: mitLogo,
+    logo: meidaLab,
     description: "Master's thesis (EPFL) hosted at MIT under Prof. Pattie Maes: a wearable near-infrared (NIR) system for non-invasive, drug-free brain stimulation. Designing and fabricating a head-mounted NIR device, developing embedded software for stimulus delivery, and running EEG-based human-subject experiments under an approved IRB protocol.",
   },
   {
