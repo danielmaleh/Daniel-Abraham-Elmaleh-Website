@@ -377,7 +377,7 @@ export const ProjectsData: Project[] = [
         slug: "biosensor-quality-analysis",
         title: "Automated Biosensor Quality Analysis Dashboard with various metrics and Grading",
         course: "Lino Biotech (Miltenyi Biotec) - Internship",
-        timeline: "2025",
+        timeline: "2026",
         summary: "Built Streamlit dashboard for automated quality analysis of biosensor data with comprehensive scoring and anomaly detection.",
         description:
             "Internship project at Lino Biotech creating 'The Daniel Test' - an interactive Streamlit dashboard for automated quality analysis of mologram sensor data. Implemented comprehensive metrics including noise analysis, SNR evaluation, spike detection, and step event identification. System provides per-sensor grading and global chip pass/fail verdicts with configurable thresholds.",
@@ -391,7 +391,14 @@ export const ProjectsData: Project[] = [
         ],
         tags: ["Bio-MedTech", "Signal Processing", "Deep Learning"],
         pdfLabel: "Test experiment procedure",
-        resources: [],
+        resources: [
+            {
+                type: "code",
+                label: "Source Code",
+                url : "https://github.com/danielmaleh/biosensor-quality-analysis",
+                description: "Streamlit dashboard for automated biosensor quality analysis and grading.",
+            },
+        ],
     },
     {
         slug: "mobile-robot-slam",
