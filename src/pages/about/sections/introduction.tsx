@@ -19,7 +19,7 @@ function Profile() {
             <img
                 src={UserInfo.profile_url}
                 alt="Profile"
-                className="w-60 h-auto rounded-lg object-cover"
+                className="w-[360px] max-w-full h-auto rounded-lg object-cover"
             />
             <div className="flex flex-col items-center gap-y-2">
                 <p className="text-2xl font-semibold text-foreground">{UserInfo.name}</p>
