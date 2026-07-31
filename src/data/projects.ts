@@ -30,7 +30,6 @@ export type Project = {
     highlights: string[];
     tags: ProjectTag[];
     resources?: ProjectResource[];
-    featured?: boolean;
     pdfLabel?: string;
     pdfDescription?: string;
     youtubeId?: string;
@@ -64,7 +63,6 @@ export const ProjectsData: Project[] = [
                 description: "Featurization, training, calibration, prediction pipeline and Streamlit app.",
             },
         ],
-        featured: true,
     },
     {
         slug: "neural-interfaces",
@@ -83,7 +81,6 @@ export const ProjectsData: Project[] = [
         tags: ["Bio-MedTech", "Electronics", "Signal Processing", "Control"],
         resources: [
         ],
-        featured: true,
     },
     {
         slug: "bio-nano-chip-aptasensor",
@@ -102,7 +99,6 @@ export const ProjectsData: Project[] = [
         tags: ["Bio-MedTech", "Electronics", "Nanotechnology"],
         resources: [
         ],
-        featured: true,
     },
     {
         slug: "intercultural-presentation",
@@ -176,7 +172,6 @@ export const ProjectsData: Project[] = [
                 description: "Deep learning models for SERS spectral analysis and preprocessing scripts.",
             },
         ],
-        featured: true,
     },
     {
         slug: "deep-learning-weather",
@@ -229,7 +224,6 @@ export const ProjectsData: Project[] = [
                 description: "The complete code for the project.",
             },
         ],
-        featured: true,
     },
     {
         slug: "solar-panel-cleaner",
@@ -255,7 +249,6 @@ export const ProjectsData: Project[] = [
                 description: "Embedded software for robot control and navigation for autonomous solar panel cleaning.",
             },
         ],
-        featured: true,
     },
     {
         slug: "controlling-behavior-robots",
@@ -453,7 +446,6 @@ export const ProjectsData: Project[] = [
                 description: "Robot control and SLAM implementation.",
             },
         ],
-        featured: true,
     },
     {
         slug: "short-documentary",
