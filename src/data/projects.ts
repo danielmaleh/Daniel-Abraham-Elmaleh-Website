@@ -568,3 +568,15 @@ export const ProjectsData: Project[] = [
 ];
 
 export const FeaturedProjects = ProjectsData.filter((project) => project.featured);
+
+// Slugs of the projects showcased on the About Me page, in display order.
+// Single source of truth: the About Me section renders these, and the asset
+// preloader fetches their assets first.
+export const AboutMeProjectSlugs = [
+    "genome-firewall",
+    "neural-interfaces",
+    "sers-creatinine-detection",
+    "solar-panel-cleaner",
+    "mobile-robot-slam",
+    "anti-stokes-gold-flakes",
+];

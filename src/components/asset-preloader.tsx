@@ -1,20 +1,10 @@
 import { useEffect } from "react";
-import { ProjectsData } from "@/data/projects";
+import { ProjectsData, AboutMeProjectSlugs } from "@/data/projects";
 import { UserInfo } from "@/data/profile";
 import { EduData } from "@/data/education";
 import { WorkData } from "@/data/work";
 import { getProjectAssets, getProjectHero } from "@/lib/project-assets";
 import { parseTimelineToTimestamp } from "@/lib/utils";
-
-// Slugs of projects featured on the About Me page
-const ABOUT_ME_PROJECT_SLUGS = [
-    "rl-quadruped-training",
-    "hand-gesture-drone-swarms",
-    "soft-arm-sim-to-real",
-    "aerial-am",
-    "eye-tracker-headlamp",
-    "autonomous-drone-racing",
-];
 
 export function AssetPreloader() {
     useEffect(() => {
@@ -44,7 +34,7 @@ export function AssetPreloader() {
 
         // 1.3 Featured Projects on About Me Page
         // We want to preload the Hero asset AND the detail assets for these specific projects first.
-        ABOUT_ME_PROJECT_SLUGS.forEach((slug) => {
+        AboutMeProjectSlugs.forEach((slug) => {
             // Hero
             const hero = getProjectHero(slug);
             if (hero) addToQueue(hero.url);

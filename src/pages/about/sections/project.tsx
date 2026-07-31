@@ -2,20 +2,11 @@ import { Link } from "react-router";
 import { FaWrench, FaArrowRight } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
-import { ProjectsData } from "@/data/projects";
+import { ProjectsData, AboutMeProjectSlugs } from "@/data/projects";
 import { ProjectPreviewCard } from "@/components/project-card";
 
 export default function Project() {
-    const orderedSlugs = [
-        "genome-firewall",
-        "neural-interfaces",
-        "sers-creatinine-detection",
-        "solar-panel-cleaner",
-        "mobile-robot-slam",
-        "anti-stokes-gold-flakes",
-    ];
-
-    const orderedProjects = orderedSlugs
+    const orderedProjects = AboutMeProjectSlugs
         .map((slug) => ProjectsData.find((project) => project.slug === slug))
         .filter((proj): proj is NonNullable<typeof proj> => Boolean(proj));
 
