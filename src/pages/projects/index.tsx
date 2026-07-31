@@ -62,6 +62,10 @@ function normalizeDimension(value?: string | number): string | number | undefine
     return Number.isFinite(numeric) ? `${numeric}px` : trimmed;
 }
 
+// How many projects the "Explore other projects" grid shows. The grid is three
+// columns wide, so this fills two rows.
+const EXPLORE_PROJECT_COUNT = 6;
+
 const allProjectTags: ProjectTag[] = Array.from(
     new Set(ProjectsData.flatMap((project) => project.tags))
 ).sort();
@@ -189,7 +193,17 @@ function ProjectsGallery() {
 }
 
 function ProjectDetailPage({ project, onBack }: { project: Project; onBack: () => void }) {
-    const otherProjects = ProjectsData.filter((item) => item.slug !== project.slug);
+    const otherProjects = useMemo(
+        () =>
+            ProjectsData.filter((item) => item.slug !== project.slug)
+                .sort(
+                    (a, b) =>
+                        (parseTimelineToTimestamp(b.timeline) ?? -Infinity) -
+                        (parseTimelineToTimestamp(a.timeline) ?? -Infinity)
+                )
+                .slice(0, EXPLORE_PROJECT_COUNT),
+        [project.slug]
+    );
     const assets = getProjectAssets(project.slug);
     const resources = project.resources ?? [];
     const posterAsset = assets.poster;
