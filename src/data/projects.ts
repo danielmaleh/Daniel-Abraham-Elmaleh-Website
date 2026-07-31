@@ -12,6 +12,7 @@ export type ProjectTag =
     | "Bio-MedTech"
     | "Computer Vision"
     | "Deep Learning"
+    | "Machine Learning"
     | "Control"
     | "Mechanical Design"
     | "Simulation"
@@ -36,6 +37,35 @@ export type Project = {
 };
 
 export const ProjectsData: Project[] = [
+    {
+        slug: "genome-firewall",
+        title: "Genome Firewall: AI Defense Against Antibiotic-Resistant Superbugs",
+        course: "Hack-Nation 6th Global AI Hackathon - OpenAI Challenge Track",
+        timeline: "2026",
+        summary: "Predicts which antibiotics will fail against a bacterial genome days before lab results arrive, with calibrated confidence and an explicit no-call when evidence is weak.",
+        description:
+            "Team project built at Hack-Nation's 6th Global AI Hackathon. Genome Firewall turns an assembled Escherichia coli genome into a per-drug antibiotic resistance report: AMRFinderPlus scans the FASTA for known resistance genes and point mutations, and one calibrated logistic-regression model per antibiotic returns likely to fail, likely to work, or an explicit no-call. Standard susceptibility testing takes 1-3 days because bacteria must be grown and physically exposed to each drug, so treatment is a best guess until results arrive; once a genome exists, the prediction runs in minutes. The system is decision support only and every call carries a mandatory lab-confirmation flag.",
+        highlights: [
+            "Built the end-to-end pipeline: FASTA to AMRFinderPlus features to per-drug calibrated prediction to a clinical-style report.",
+            "Trained four calibrated models (ciprofloxacin, ceftriaxone, gentamicin, ampicillin) on 3,000 BV-BRC genomes over a 460-column feature schema.",
+            "Applied mash homology grouping so genetically related genomes cannot leak across train, calibration, and test splits.",
+            "Designed a conservative no-call policy: absence of a resistance marker is never treated as proof of susceptibility.",
+            "Reported calibrated confidence, evidence category, and explicit reasons behind every no-call.",
+            "Shipped a Streamlit antibiogram frontend over a stable predict() backend entrypoint.",
+        ],
+        tags: ["Bio-MedTech", "Machine Learning"],
+        pdfLabel: "Technical Provenance",
+        pdfDescription: "Data lineage, leakage controls, model design, calibration, evaluation, and reporting policy.",
+        resources: [
+            {
+                type: "code",
+                label: "Source Code",
+                url : "https://github.com/justenm25/HackNation-6th",
+                description: "Featurization, training, calibration, prediction pipeline and Streamlit app.",
+            },
+        ],
+        featured: true,
+    },
     {
         slug: "neural-interfaces",
         title: "Closed Loop Optogenetic & Electrical Neural Interface",

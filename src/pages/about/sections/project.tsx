@@ -7,12 +7,12 @@ import { ProjectPreviewCard } from "@/components/project-card";
 
 export default function Project() {
     const orderedSlugs = [
+        "genome-firewall",
         "neural-interfaces",
         "sers-creatinine-detection",
         "solar-panel-cleaner",
         "mobile-robot-slam",
         "anti-stokes-gold-flakes",
-        "planetary-system-opengl",
     ];
 
     const orderedProjects = orderedSlugs

@@ -17,6 +17,7 @@ const TAG_COLORS: Record<ProjectTag, string> = {
     "Bio-MedTech": "bg-slate-50 dark:bg-slate-900 text-emerald-800 dark:text-emerald-200 border-emerald-400 dark:border-emerald-500",
     "Computer Vision": "bg-slate-50 dark:bg-slate-900 text-sky-800 dark:text-sky-200 border-sky-400 dark:border-sky-500",
     "Deep Learning": "bg-slate-50 dark:bg-slate-900 text-pink-800 dark:text-pink-200 border-pink-400 dark:border-pink-500",
+    "Machine Learning": "bg-slate-50 dark:bg-slate-900 text-teal-800 dark:text-teal-200 border-teal-400 dark:border-teal-500",
     Control: "bg-slate-50 dark:bg-slate-900 text-green-800 dark:text-green-200 border-green-400 dark:border-green-500",
     "Mechanical Design": "bg-slate-50 dark:bg-slate-900 text-orange-800 dark:text-orange-200 border-orange-400 dark:border-orange-500",
     Simulation: "bg-slate-50 dark:bg-slate-900 text-purple-800 dark:text-purple-200 border-purple-400 dark:border-purple-500",
